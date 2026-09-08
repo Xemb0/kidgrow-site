@@ -52,6 +52,10 @@
     display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;color:var(--ink-soft);font-size:14px}
   footer a{color:var(--ink-soft);font-weight:600;text-decoration:none}
   footer a:hover{color:var(--ink)}
+  a{color:var(--grape-deep);overflow-wrap:anywhere}
+  a:focus-visible,summary:focus-visible{outline:3px solid var(--grape-deep);outline-offset:4px}
+  .contact a.mail{max-width:100%;padding:14px 18px}
+  @media(max-width:560px){header{flex-wrap:wrap;gap:20px}nav{display:flex;flex-wrap:wrap;gap:16px}nav a{margin-left:0}.contact{padding:24px 16px}}
 </style>
 </head>
 <body>
@@ -64,63 +68,77 @@
 
   <div class="hero">
     <h1>How can we help? 💛</h1>
-    <p>Real humans (and parents) answer every message.</p>
+    <p>Help with your child’s play, progress and parent account.</p>
   </div>
 
   <div class="contact">
     <div class="big">The fastest way to reach us is email:</div>
     <a class="mail" href="mailto:vishalnishadofficials@gmail.com?subject=KidGrow%20Support">vishalnishadofficials@gmail.com</a>
-    <div class="note">We reply within 1–2 business days. Tell us your device model and what happened — screenshots help a lot!</div>
+    <div class="note">Tell us your device model, app version and what happened. Please avoid sending sensitive information about your child.</div>
   </div>
 
   <h2>Frequently asked questions</h2>
 
   <details>
-    <summary>My child got out of the app / into the wrong section — how does Kid Mode work?</summary>
-    <p>When Kid Mode is locked (the green lock in the top corner), Settings and other grown-up areas are protected by a math question only grown-ups can answer. To lock or unlock, tap the lock pill in the status bar.</p>
-    <p>Tip: you can also enable iOS Guided Access (Settings → Accessibility) for an extra layer that keeps the home button/gestures locked too.</p>
+    <summary>How do grown-up access and the play timer work?</summary>
+    <p>Settings uses your device’s authentication, such as Face ID, Touch ID or the device passcode. Keep that passcode private. In Settings → Controls &amp; privacy, choose a child-session duration and tap Start child session. When time runs out, KidGrow asks for grown-up access before play can continue.</p>
+    <p>The app timer does not stop someone switching to another app. On iPhone or iPad, enable <a href="https://support.apple.com/en-us/111795">Guided Access</a> in the device’s Settings → Accessibility. Start a KidGrow session, then triple-click the side or Home button to start Guided Access and set its time limit. On Android, use the parent controls to open screen pinning; enable the device PIN requirement for unpinning.</p>
   </details>
 
   <details>
-    <summary>How do I turn sections (Camera, Videos, Games…) on or off?</summary>
-    <p>Open Settings from the dock (it's behind the parental gate), then toggle any section. The change appears on your child's home screen immediately.</p>
+    <summary>How do I turn sections such as Camera or Games on or off?</summary>
+    <p>Open KidGrow’s Settings, verify grown-up access, and choose Controls &amp; privacy. The section switches change what appears on the selected child’s home screen.</p>
   </details>
 
   <details>
-    <summary>How do pretend Calls and Messages work? Is my child contacting anyone real?</summary>
-    <p>No. Calls and Messages are fully pretend — there is no real network, dialing, or chat. Your child "calls" only the trusted grown-ups you add in Settings, and the conversation is simulated on the device.</p>
+    <summary>Do pretend Calls and Messages contact anyone?</summary>
+    <p>No. Calls and Messages are pretend activities with built-in characters. They do not dial a phone number, send real messages or read your address book. You can choose which pretend contacts appear in Settings.</p>
   </details>
 
   <details>
-    <summary>How does the learning adapt to my child?</summary>
-    <p>KidGrow uses spaced repetition: cards your child knows well appear less often, and the ones they mix up come back sooner. The Grown-ups Zone shows exactly what's known, what's being learned, and which pairs get confused.</p>
+    <summary>What ages and languages does KidGrow cover?</summary>
+    <p>Profiles support ages 1–12. Younger children can explore sounds with a grown-up; later activities include colors, phonics, number work, reading and science. Learning decks support English and Hindi. The newer reading and science games for older children are currently in English. Choose activities that suit your child, with help where needed.</p>
   </details>
 
   <details>
-    <summary>How do I manage or cancel my KidGrow Pro subscription?</summary>
-    <p>Subscriptions are handled by the App Store. Open Settings on your iPhone → tap your name → Subscriptions → KidGrow, where you can change or cancel anytime. Cancelling keeps Pro active until the end of the paid period.</p>
-    <p>To restore a purchase on a new device: Grown-ups Zone → Restore purchases.</p>
+    <summary>How do I understand my child’s progress?</summary>
+    <p>Open Settings → Progress to see colorful charts, first-answer results, familiar items and things to practice. Choose Today, This week or a longer period. The learning decks use repeated practice, bringing less familiar items back sooner. A suggested game asks you to leave statistics before you hand the phone back to your child.</p>
+    <p>Enable Record dated learning and play to build a timeline. Foreground time includes idle time; it is not a measure of attention. The overview describes activity in KidGrow, not a developmental assessment.</p>
   </details>
 
   <details>
-    <summary>Does KidGrow show ads or talk to strangers?</summary>
-    <p>Never. KidGrow has no third-party ads, no chats with real people, and nothing your child can stumble into. The pretend Internet and Friends sections are entirely on-device.</p>
+    <summary>How do I manage, cancel or restore a subscription?</summary>
+    <p>Open Settings → Controls &amp; privacy → KidGrow Pro. Explore KidGrow Pro opens the purchase screen; Manage subscription opens subscription help and management. Prices, billing periods and any trial eligibility appear in the store purchase screen before you confirm.</p>
+    <p>For an Apple purchase, open iPhone Settings → your name → Subscriptions → KidGrow to cancel or change your plan. For a Google Play purchase, open Play Store → your profile → Payments &amp; subscriptions → Subscriptions. <a href="https://support.apple.com/en-us/118428">Apple’s subscription help</a> has the current steps.</p>
+    <p>Use Restore purchases in the KidGrow Pro parent screen while signed in to the store account that made the purchase. Deleting KidGrow or your KidGrow account does not cancel a store subscription.</p>
   </details>
 
   <details>
-    <summary>How do I delete my account and data?</summary>
-    <p>Email us at <a href="mailto:vishalnishadofficials@gmail.com?subject=Delete%20my%20KidGrow%20account">vishalnishadofficials@gmail.com</a> from the address you signed up with, and we'll delete your account and associated data within 30 days. Learning progress stored only on your device is removed when you delete the app.</p>
+    <summary>Does KidGrow show ads or share photos and messages?</summary>
+    <p>KidGrow has no third-party ads or public chat. Sticker photos stay in the app’s local storage; pretend messages and instrument-note recordings are local activities. They are not uploaded with learning progress. Parent accounts, subscriptions and optional cloud learning history do use online services. Read our <a href="privacy.html">privacy policy</a> for the details.</p>
   </details>
 
   <details>
-    <summary>Something's not working — sound, speech, or a frozen screen.</summary>
-    <p>First try: check the ring/silent switch and volume, then force-quit and reopen the app. If speech is silent, make sure the speaker button in the app is on (yellow).</p>
-    <p>Still stuck? Email us with your device model and iOS version and we'll dig in.</p>
+    <summary>How do I delete a child’s data or my parent account?</summary>
+    <p>Open Settings → Controls &amp; privacy. Use Clear dated history to remove the timeline, Reset learning and history to start over, or Delete child everywhere to remove that profile and its learning data. These cloud actions require a connection.</p>
+    <p>To remove your parent account and all child profiles, tap Delete parent account and confirm. Store subscriptions must be cancelled separately. For help with access, correction, deletion or subscription-provider records, email <a href="mailto:vishalnishadofficials@gmail.com?subject=KidGrow%20privacy%20request">vishalnishadofficials@gmail.com</a>. Do not send passwords, payment-card details or unnecessary photos of your child.</p>
+  </details>
+
+  <details>
+    <summary>My profile or progress could not sync. What should I do?</summary>
+    <p>Check the internet connection and try again in Settings. Learning saved on the device can wait for a connection when sync is enabled. Avoid reinstalling the app to troubleshoot unsynced progress, because deleting the app can remove local data.</p>
+    <p>If the error continues, email us with the exact message, your device model and app version.</p>
+  </details>
+
+  <details>
+    <summary>Sound, speech or a screen is not working.</summary>
+    <p>Check device volume, the silent switch and the app’s speaker setting, then close and reopen KidGrow. Device speech voices may need to be downloaded in your device’s language or accessibility settings.</p>
+    <p>If you still need help, email us with your device model, operating-system version and what you tapped.</p>
   </details>
 
   <footer>
     <div>© 2026 KidGrow · Made with care by Autotech</div>
-    <div><a href="index.html">kidgrow home</a></div>
+    <div><a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of use</a></div>
   </footer>
 </main>
 </body>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KidGrow Privacy — Your family’s information</title>
+<meta name="description" content="How KidGrow handles parent accounts, child profiles, optional learning history, local photos and subscriptions, and how to delete your data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FFFBF3; --paper:#FFFFFF; --ink:#2E2440; --ink-soft:#6C6080;
+    --line:#ECE4D6; --line-strong:#DCD2E4;
+    --grape:#8B3FE8; --grape-deep:#6A1FC2; --grape-soft:#F1E6FF;
+    --sun-soft:#FFF3CC; --green-soft:#DCF7E4; --blue-soft:#DDEEFF; --pink-soft:#FFE2F2;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Fredoka',system-ui,sans-serif;background:var(--cream);color:var(--ink);
+    overflow-x:hidden;line-height:1.55}
+  .blob{position:fixed;border-radius:50%;filter:blur(60px);opacity:.55;pointer-events:none;z-index:0}
+  .b1{width:420px;height:380px;background:var(--grape-soft);top:-120px;left:-120px}
+  .b2{width:360px;height:320px;background:var(--sun-soft);top:40%;right:-140px}
+  .b3{width:380px;height:340px;background:var(--blue-soft);bottom:-120px;left:-120px}
+  main{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:0 24px}
+  header{display:flex;align-items:center;justify-content:space-between;padding:28px 0}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:22px;color:var(--ink);text-decoration:none}
+  .logo-mark{width:40px;height:40px;border-radius:13px;background:var(--grape);
+    box-shadow:0 4px 0 var(--grape-deep);display:grid;place-items:center;font-size:20px}
+  nav a{color:var(--ink-soft);text-decoration:none;font-weight:600;margin-left:22px}
+  nav a:hover{color:var(--ink)}
+  .hero{text-align:center;padding:44px 0 8px}
+  h1{font-size:clamp(30px,5vw,44px);font-weight:700}
+  .hero p{color:var(--ink-soft);font-size:18px;margin-top:10px}
+  .contact{background:var(--paper);border:1.5px solid var(--line);border-radius:26px;
+    box-shadow:0 4px 0 var(--line);padding:30px;text-align:center;margin:34px 0}
+  .contact .big{font-size:19px;font-weight:600}
+  .contact a.mail{display:inline-block;margin-top:12px;background:var(--grape);color:#fff;
+    font-weight:700;padding:14px 28px;border-radius:999px;text-decoration:none;box-shadow:0 5px 0 var(--grape-deep)}
+  .contact a.mail:active{transform:translateY(3px);box-shadow:0 2px 0 var(--grape-deep)}
+  .contact .note{color:var(--ink-soft);font-size:14px;margin-top:12px}
+  h2{font-size:24px;margin:40px 0 16px}
+  details{background:var(--paper);border:1.5px solid var(--line);border-radius:20px;
+    box-shadow:0 3px 0 var(--line);margin-bottom:12px;overflow:hidden}
+  summary{cursor:pointer;font-weight:600;font-size:16px;padding:18px 22px;list-style:none;
+    display:flex;justify-content:space-between;align-items:center;gap:12px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:22px;color:var(--ink-soft);flex-shrink:0}
+  details[open] summary::after{content:"–"}
+  details p{padding:0 22px 18px;color:var(--ink-soft);font-size:15px}
+  details p+p{margin-top:8px}
+  footer{border-top:1.5px solid var(--line);margin-top:56px;padding:32px 0 44px;
+    display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;color:var(--ink-soft);font-size:14px}
+  footer a{color:var(--ink-soft);font-weight:600;text-decoration:none}
+  footer a:hover{color:var(--ink)}
+  a{color:var(--grape-deep);overflow-wrap:anywhere}
+  a:focus-visible,summary:focus-visible{outline:3px solid var(--grape-deep);outline-offset:4px}
+  .contact a.mail{max-width:100%;padding:14px 18px}
+  @media(max-width:560px){header{flex-wrap:wrap;gap:20px}nav{display:flex;flex-wrap:wrap;gap:16px}nav a{margin-left:0}.contact{padding:24px 16px}}
+  .policy{background:var(--paper);border:1.5px solid var(--line);border-radius:26px;padding:32px;margin-top:32px}
+  .policy h2{font-size:23px;margin:30px 0 10px}
+  .policy h2:first-child{margin-top:0}
+  .policy p,.policy li{font-size:16px;margin-bottom:14px}
+  .policy ul{padding-left:22px}
+  .policy li{padding-left:4px}
+  .updated{font-size:15px!important}
+  @media(max-width:560px){.policy{padding:24px 20px}}
+</style>
+</head>
+<body>
+<div class="blob b1" aria-hidden="true"></div><div class="blob b2" aria-hidden="true"></div><div class="blob b3" aria-hidden="true"></div>
+<main>
+  <header>
+    <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">🌱</span>KidGrow</a>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="support.html">Support</a></nav>
+  </header>
+  <div class="hero">
+    <h1>Your family’s privacy</h1>
+    <p>What KidGrow stores, why it is needed, and what you control.</p>
+    <p class="updated">Privacy policy · Updated September 9, 2026</p>
+  </div>
+  <article class="policy">
+    <h2>Who this policy is for</h2>
+    <p>KidGrow is a pretend-phone and learning app from Autotech, with activities for children ages 1–12. A parent or guardian creates and manages the account, child profiles, privacy choices and purchases. This policy covers the KidGrow mobile app and this support website. Contact us at <a href="mailto:vishalnishadofficials@gmail.com?subject=KidGrow%20privacy%20request">vishalnishadofficials@gmail.com</a>.</p>
+    <p>KidGrow does not display third-party ads, sell family information or offer public profiles, real messaging or public photo sharing.</p>
+
+    <h2>Parent accounts and child profiles</h2>
+    <p>We use Supabase to provide sign-in and store parent accounts and child profiles. Account data includes your account identifier, email address and the sign-in information supplied by your chosen method. If you choose Apple or Google sign-in, the provider may also supply basic profile information such as a name or profile image, according to your choices with that provider.</p>
+    <p>A child profile contains a parent-chosen name, age in years, an avatar choice, its identifier and its link to the parent account. A nickname is sufficient; please do not enter information the app does not ask for. Profiles are saved online and cached on the device so the app can select suitable activities and keep each child’s learning separate. Children do not need their own email address.</p>
+
+    <h2>Learning progress and optional history</h2>
+    <p>KidGrow keeps current practice progress on the device to choose learning items. Dated recording and cross-device sync are off by default for a new child’s learning record. A parent can enable them in Settings → Controls &amp; privacy.</p>
+    <ul>
+      <li><strong>Record dated learning and play:</strong> saves quiz answers, whether an answer was correct, first-answer results, items that were mixed up, activity identifiers, language, dates and times. It also records openings and foreground-open duration for named sections, such as Learn, Games or Music.</li>
+      <li><strong>Cross-device sync:</strong> sends learning records to Supabase linked to the child profile. It also uses device-generated identifiers and sequence information to combine records without counting retries twice. Enabling sync starts from the cloud record; earlier device-only activity is not automatically uploaded.</li>
+    </ul>
+    <p>These records create the parent’s progress charts and practice suggestions. Foreground time can include idle time and is not a measure of attention. The app does not infer a medical or developmental diagnosis from these records.</p>
+    <p>Learning history does not include photos, audio from a microphone, pretend message contents, your contacts, web addresses or a recording of screen touches. Turning off sync stops new uploads from that device immediately; applying the change to other devices needs a connection. Existing cloud data remains until you clear or delete it.</p>
+
+    <h2>Photos, pretend messages and sound</h2>
+    <p>The sticker camera uses the camera only with the device’s camera permission. Captured images stay in the app’s local storage and are displayed in Moments. KidGrow does not upload them, save them to a public feed or include them in cloud learning sync. The current gallery is temporary and should not be used to store irreplaceable photos.</p>
+    <p>Pretend calls and messages use built-in characters and message choices. They do not contact real people or access your address book. Instrument recording replays the notes tapped in the app; it does not record the microphone. Speech uses the device’s text-to-speech service and its installed voices. Local settings, pretend activities and temporary files may be removed when the app is deleted; device backups are controlled by your operating system and account settings.</p>
+
+    <h2>Subscriptions and RevenueCat</h2>
+    <p>Apple or Google handles purchase confirmation and payment. KidGrow uses RevenueCat to show and update its purchase screen, validate purchases, restore access and manage subscription entitlements. RevenueCat receives a parent account identifier, purchase receipts or tokens, product and transaction information, subscription status and technical information such as app and operating-system version, locale and currency. RevenueCat also provides subscription reporting.</p>
+    <p>We do not send child names, ages, photos or learning answers to RevenueCat. We do not receive your full payment-card details. Trial availability, eligibility, billing periods and the price after a trial are shown before you confirm a purchase. Deleting your KidGrow account or app does not cancel an App Store or Google Play subscription.</p>
+
+    <h2>Service providers and online requests</h2>
+    <p>Supabase processes account, profile and opted-in learning data for the app. RevenueCat processes subscription data. Apple and Google process sign-in or purchases when you use their services. Downloading optional learning content also makes a request to our content host. Online services receive technical connection information, such as IP addresses, needed to deliver requests and protect their services. These providers may process information outside your country.</p>
+    <p>We use these services to operate KidGrow, maintain account security, deliver content, answer support requests and honor purchases. We do not use the child’s learning record for advertising or tracking across other companies’ apps or websites. Information may also be disclosed when required by law or needed to protect users and the service.</p>
+    <p>Provider information: <a href="https://supabase.com/privacy">Supabase privacy</a>, <a href="https://www.revenuecat.com/privacy">RevenueCat privacy</a>, <a href="https://www.apple.com/legal/privacy/">Apple privacy</a> and <a href="https://policies.google.com/privacy">Google privacy</a>.</p>
+
+    <h2>How long information stays</h2>
+    <p>Parent accounts and child profiles remain until deleted. Detailed cloud learning events are kept for up to 90 days, with an additional cap of 10,000 events per child; scheduled cleanup can take up to an hour after the cutoff. Daily summaries and current practice progress remain until you clear dated history, reset learning or delete the child, depending on the action you choose.</p>
+    <p>Synced or device-only detailed records are pruned on app startup after 90 days. Records waiting to sync can remain longer to avoid losing unsent learning progress. Daily summaries and current progress are retained locally until reset or deletion.</p>
+    <p>Deleting data removes it from the active KidGrow account and learning database. Provider backups, security logs, support correspondence and transaction records can follow separate retention schedules and may remain where needed for recovery, legal obligations, fraud prevention or billing. Deletion is not a promise that every backup or store transaction disappears immediately. RevenueCat purchase records are not automatically erased by the current in-app account deletion; contact us to request removal of provider-held data.</p>
+
+    <h2>Your choices, access and deletion</h2>
+    <ul>
+      <li>Use a nickname for your child and choose the appropriate age in Settings.</li>
+      <li>Turn dated recording or cross-device sync off in Settings → Controls &amp; privacy. Review the confirmation before changing sync.</li>
+      <li>Choose <strong>Clear dated history</strong> to remove the timeline while keeping current practice progress, or <strong>Reset learning and history</strong> to remove both.</li>
+      <li>Choose <strong>Delete child everywhere</strong> to delete that profile and its cloud learning data.</li>
+      <li>Choose <strong>Delete parent account</strong> to remove your account and all child profiles. Cloud deletion needs a connection; other devices need to reconnect to receive changes. Deleting the app removes its local app data but does not delete the online account.</li>
+    </ul>
+    <p>You can contact us to request access, correction or deletion of your or your child’s information, or to withdraw permission for optional cloud learning records. We may ask you to verify that you control the parent account before releasing or changing family data. Please do not send passwords, card numbers or unnecessary child photos. Depending on your location, you may also have rights to portability, restriction, objection or a complaint to your local privacy authority.</p>
+    <p>If a child has entered personal information without a parent’s permission, contact us so we can help remove it. Parents should supervise use and keep the device’s authentication details private. KidGrow’s parent gate protects app settings; operating-system features such as Guided Access control leaving the app.</p>
+
+    <h2>This website and policy changes</h2>
+    <p>This website is hosted by GitHub Pages and loads its font from Google Fonts. Those services receive normal web requests, including connection information. We do not add advertising or analytics scripts to this site. If you email support, your email provider and ours process the message and any information you choose to include.</p>
+    <p>We will update this page when the app’s data practices change and show the update date above. Material changes to optional learning-data collection will be explained in the app before new consent is requested.</p>
+  </article>
+  <footer>
+    <div>© 2026 KidGrow · Made with care by Autotech</div>
+    <div><a href="support.html">Support</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of use</a></div>
+  </footer>
+</main>
+</body>
+</html>

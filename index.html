@@ -83,6 +83,9 @@
     display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;color:var(--ink-soft);font-size:14px}
   footer a{color:var(--ink-soft);font-weight:600;text-decoration:none;margin-right:18px}
   footer a:hover{color:var(--ink)}
+  a:focus-visible{outline:3px solid var(--grape-deep);outline-offset:4px}
+  @media(max-width:560px){header{flex-wrap:wrap;gap:20px}nav{display:flex;flex-wrap:wrap;gap:16px}nav a{margin-left:0}}
+  @media(prefers-reduced-motion:reduce){.btn{transition:none}}
 </style>
 </head>
 <body>
@@ -101,10 +104,10 @@
     <h1>They always want your phone.<br>Give them one that's <em>actually theirs</em>.</h1>
     <p>KidGrow is a safe pretend phone packed with real learning — letters, numbers, colors, music, and games that adapt to your child. No ads. No strangers. Ever.</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="#" aria-disabled="true">Coming soon to the App&nbsp;Store</a>
+      <span class="btn btn-primary">Coming soon to the App&nbsp;Store</span>
       <a class="btn btn-ghost" href="support.html">Questions? We're here</a>
     </div>
-    <div class="badge">For ages 2–6 · English &amp; हिन्दी · Made by parents</div>
+    <div class="badge">For ages 1–12 · English &amp; हिन्दी learning decks</div>
 
     <div class="phone" aria-hidden="true">
       <div class="bar"><span>9:41</span><span>🔒 📶 🔋</span></div>
@@ -122,8 +125,8 @@
 
   <section id="learn">
     <div class="kicker">Learn</div>
-    <h2>A full early-learning course inside</h2>
-    <p class="sub">Everything is spoken aloud, so little ones play independently — no reading needed.</p>
+    <h2>A little discovery at every age</h2>
+    <p class="sub">Explore sounds together with ages 1–2, practice colors and letters, then try reading, number and science games as children grow. Newer games for older children are in English.</p>
     <div class="grid">
       <div class="card"><div class="ic" style="background:var(--blue-soft)">🎨</div>
         <h3>Colors, Numbers &amp; Letters</h3><p>Bright flashcards and quizzes with levels that unlock as each deck is mastered.</p></div>
@@ -140,11 +143,11 @@
     <p class="sub">Every icon does something worth tapping — and nothing you wouldn't want it to.</p>
     <div class="grid">
       <div class="card"><div class="ic" style="background:var(--green-soft)">📞</div>
-        <h3>Calls &amp; messages, pretend</h3><p>Your child "calls" the grown-ups you add. No real network, no strangers.</p></div>
+        <h3>Calls &amp; messages, pretend</h3><p>Your child "calls" built-in pretend contacts. No real network, no strangers.</p></div>
       <div class="card"><div class="ic" style="background:var(--pink-soft)">🎹</div>
         <h3>Instruments &amp; recording</h3><p>Piano, drums and more — play, record, and hear it back. Follow-the-beat games too.</p></div>
       <div class="card"><div class="ic" style="background:var(--sun-soft)">🧩</div>
-        <h3>A growing games store</h3><p>Camera, moments gallery, times tables, and new games added regularly.</p></div>
+        <h3>More ways to discover</h3><p>Sticker photos, times tables, patterns, reading and science games — with activities matched to the child’s age.</p></div>
     </div>
   </section>
 
@@ -153,9 +156,9 @@
     <h2>You stay in control</h2>
     <div class="grid">
       <div class="card"><div class="ic" style="background:var(--green-soft)">🔒</div>
-        <h3>Kid Mode lock</h3><p>A grown-ups-only math gate keeps little ones inside the app and out of your stuff.</p></div>
+        <h3>Grown-up controls</h3><p>Device authentication protects Settings. Set a play timer, and use iOS Guided Access to keep the device in KidGrow.</p></div>
       <div class="card"><div class="ic" style="background:var(--blue-soft)">📊</div>
-        <h3>Real progress, visible</h3><p>The Grown-ups Zone shows what's known, what's still being learned, and what gets mixed up.</p></div>
+        <h3>Learning, made visible</h3><p>Colorful charts show first answers, practice progress and mix-ups. Choose a useful game before handing the phone back.</p></div>
       <div class="card"><div class="ic" style="background:var(--grape-soft)">🎛️</div>
         <h3>Your phone, your rules</h3><p>Switch any section on or off. You decide exactly what's on their phone.</p></div>
     </div>
@@ -164,8 +167,8 @@
   <section>
     <div class="strip">
       <div><b>0</b><span>ads, ever</span></div>
-      <div><b>2–6</b><span>years old, by design</span></div>
-      <div><b>2</b><span>languages — English &amp; हिन्दी</span></div>
+      <div><b>1–12</b><span>years, with age-based games</span></div>
+      <div><b>2</b><span>learning-deck languages</span></div>
       <div><b>1</b><span>happy phone owner 🌱</span></div>
     </div>
   </section>
@@ -174,6 +177,8 @@
     <div>© 2026 KidGrow · Made with care by Autotech</div>
     <div>
       <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of use</a>
       <a href="mailto:vishalnishadofficials@gmail.com">Contact</a>
     </div>
   </footer>
