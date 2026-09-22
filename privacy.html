@@ -76,7 +76,7 @@
   <div class="hero">
     <h1>Your family’s privacy</h1>
     <p>What KidGrow stores, why it is needed, and what you control.</p>
-    <p class="updated">Privacy policy · Updated September 9, 2026</p>
+    <p class="updated">Privacy policy · Updated September 22, 2026</p>
   </div>
   <article class="policy">
     <h2>Who this policy is for</h2>
@@ -88,7 +88,7 @@
     <p>A child profile contains a parent-chosen name, age in years, an avatar choice, optional gender, country and language preferences, its identifier and its link to the parent account. Country is a profile choice; KidGrow does not request the device’s GPS location. A nickname is sufficient; please do not enter information the app does not ask for. Profiles are saved online and cached on the device so the app can select suitable activities and keep each child’s learning separate. Children do not need their own email address.</p>
 
     <h2>Learning progress and optional history</h2>
-    <p>KidGrow keeps current practice progress on the device to choose learning items. Dated recording and cross-device sync are off by default for a new child’s learning record. A parent can enable them in Settings → Controls &amp; privacy.</p>
+    <p>KidGrow keeps current practice progress on the device to choose learning items. Dated recording and cross-device sync are off by default for a new child’s learning record. A parent can enable them in Settings → Profile.</p>
     <ul>
       <li><strong>Record dated learning and play:</strong> saves quiz answers, whether an answer was correct, first-answer results, items that were mixed up, activity identifiers, language, dates and times. It also records openings and foreground-open duration for named sections, such as Learn, Games or Music.</li>
       <li><strong>Cross-device sync:</strong> sends learning records to Supabase linked to the child profile. It also uses device-generated identifiers and sequence information to combine records without counting retries twice. Enabling sync starts from the cloud record; earlier device-only activity is not automatically uploaded.</li>
@@ -97,9 +97,14 @@
     <p>Learning history does not include photos, audio from a microphone, pretend message contents, your contacts, web addresses or a recording of screen touches. Turning off sync stops new uploads from that device immediately; applying the change to other devices needs a connection. Existing cloud data remains until you clear or delete it.</p>
 
     <h2>Photos, pretend messages and sound</h2>
-    <p>The sticker camera uses the camera only with the device’s camera permission. Captured images stay in the app’s local storage and are displayed in Moments. KidGrow does not upload them, save them to a public feed or include them in cloud learning sync. The current gallery is temporary and should not be used to store irreplaceable photos.</p>
+    <p>The sticker camera uses the camera only with the device’s camera permission. Captured images stay in the app’s local storage and are displayed in Moments. KidGrow does not upload them, save them to a public feed or include them in cloud learning sync. Drawings and captured photos saved in Moments remain in KidGrow on that device across app restarts. They are not backed up by progress sync. Removing a child, clearing app storage or uninstalling can remove these files; do not use the app as the only copy of irreplaceable photos.</p>
     <p>Pretend calls and messages use built-in characters and message choices. They do not contact real people or access your address book. Instrument recording replays the notes tapped in the app; it does not record the microphone. Speech uses the device’s text-to-speech service and its installed voices. Local settings, pretend activities and temporary files may be removed when the app is deleted; device backups are controlled by your operating system and account settings.</p>
 
+    <h2>Language packs and downloaded learning pictures</h2>
+    <p>Optional dual-language narration uses Google ML Kit translation on the device after language packs download. Text translation is performed locally. The model download service receives the network information needed to deliver those files. The device speech service reads learning text aloud; voice availability depends on installed voices.</p>
+    <p>Optional encyclopedia and body-learning pictures download from our content service and are cached in KidGrow’s private storage. Requests use your parent account to check access to premium content. Downloaded files use device storage and may be removed when you clear app storage or uninstall.</p>
+    <h2>Parent support conversations</h2>
+    <p>Messages you send through Help &amp; support are stored in Supabase with your parent account identifier, conversation identifier, message content, delivery/read status and timestamps so our support team can respond. This is private parent-to-support communication, not a child chat or public feed. Please do not include passwords, payment-card details or unnecessary information about a child.</p>
     <h2>Subscriptions and RevenueCat</h2>
     <p>Apple or Google handles purchase confirmation and payment. KidGrow uses RevenueCat to show and update its purchase screen, validate purchases, restore access and manage subscription entitlements. RevenueCat receives a parent account identifier, purchase receipts or tokens, product and transaction information, subscription status and technical information such as app and operating-system version, locale and currency. RevenueCat also provides subscription reporting.</p>
     <p>We do not send child names, ages, photos or learning answers to RevenueCat. We do not receive your full payment-card details. Trial availability, eligibility, billing periods and the price after a trial are shown before you confirm a purchase. Deleting your KidGrow account or app does not cancel an App Store or Google Play subscription.</p>
@@ -117,9 +122,9 @@
     <h2>Your choices, access and deletion</h2>
     <ul>
       <li>Use a nickname for your child and choose the appropriate age in Settings.</li>
-      <li>Turn dated recording or cross-device sync off in Settings → Controls &amp; privacy. Review the confirmation before changing sync.</li>
+      <li>Turn dated recording or cross-device sync off in Settings → Profile. Review the confirmation before changing sync.</li>
       <li>Choose <strong>Clear dated history</strong> to remove the timeline while keeping current practice progress, or <strong>Reset learning and history</strong> to remove both.</li>
-      <li>Choose <strong>Delete child everywhere</strong> to delete that profile and its cloud learning data.</li>
+      <li>Choose <strong>Start over with this child</strong> to delete that profile and its cloud learning data.</li>
       <li>Choose <strong>Delete parent account</strong> to remove your account and all child profiles. Cloud deletion needs a connection; other devices need to reconnect to receive changes. Deleting the app removes its local app data but does not delete the online account.</li>
     </ul>
     <p>You can contact us to request access, correction or deletion of your or your child’s information, or to withdraw permission for optional cloud learning records. We may ask you to verify that you control the parent account before releasing or changing family data. Please do not send passwords, card numbers or unnecessary child photos. Depending on your location, you may also have rights to portability, restriction, objection or a complaint to your local privacy authority.</p>
@@ -131,7 +136,8 @@
   </article>
   <footer>
     <div>© 2026 KidGrow · Made with care by Autotech</div>
-    <div><a href="support.html">Support</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of use</a></div>
+    <div><a href="support.html">Support</a> · <a href="terms.html">Terms of use</a></div>
+  <div><a href="delete-account.html">Delete account &amp; data</a></div>
   </footer>
 </main>
 </body>
